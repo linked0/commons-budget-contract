@@ -80,6 +80,11 @@ const config: HardhatUserConfig = {
             chainId: 34559,
             accounts: [process.env.ADMIN_KEY || "", process.env.USER_KEY || ""],
         },
+        goerli: {
+            url: process.env.GOERLI_URL || "",
+            chainId: 5,
+            accounts: [process.env.ADMIN_KEY || "", process.env.USER_KEY || ""],
+        },
     },
     gasReporter: {
         enabled: process.env.REPORT_GAS !== undefined,
