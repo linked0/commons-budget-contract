@@ -80,6 +80,11 @@ const config: HardhatUserConfig = {
             chainId: 34559,
             accounts: [process.env.ADMIN_KEY || "", process.env.USER_KEY || ""],
         },
+        jaynet: {
+            url: process.env.JAY_URL || "",
+            chainId: 30718,
+            accounts: [process.env.ADMIN_KEY || "", process.env.USER_KEY || ""],
+        },
     },
     gasReporter: {
         enabled: process.env.REPORT_GAS !== undefined,
