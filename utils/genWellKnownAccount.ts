@@ -34,6 +34,8 @@ async function main() {
                 return;
             }
 
+            console.log("parsing file:", file);
+
             const data = JSON.parse(fs.readFileSync(join(folderPath, file)), "utf-8");
             let account: Account;
             try {
